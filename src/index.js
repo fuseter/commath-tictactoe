@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
+import Button from '@material-ui/core/Button';
 
 
 function Square(props) {
@@ -96,7 +96,7 @@ class Game extends React.Component {
         'Go to game start';
       return (
         <li key={move}>
-          <button onClick={() => this.jumpTo(move)}>{desc}</button>
+            <Button variant="contained" color="secondary" onClick={() => this.jumpTo(move)}>{desc}</Button>
         </li>
       );
     });
